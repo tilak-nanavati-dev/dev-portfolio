@@ -107,5 +107,5 @@ This portfolio follows a minimalist and professional design approach:
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/tilak-nanavati-dev/dev-portfolio.git
+cd dev-portfolio
