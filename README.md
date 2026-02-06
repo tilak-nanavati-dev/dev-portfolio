@@ -1,20 +1,111 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Tilak Nanavati — Principal Software Engineer Portfolio
 
-# Run and deploy your AI Studio app
+A minimalist, high-authority personal portfolio website showcasing architecture-driven engineering, AI-powered platforms, and scalable full-stack system design.
 
-This contains everything you need to run your app locally.
+This portfolio is designed as a technical homepage rather than a traditional resume-style site — emphasizing impact, engineering depth, and system-level thinking.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1Gvto0SFQP_ZPTX7kJv1vjcxZsf3I1X4M
+---
 
-## Run Locally
+## 🚀 About
 
-**Prerequisites:**  Node.js
+I am a Principal Software Engineer specializing in:
 
+- AI-driven engineering platforms
+- Retrieval-Augmented Generation (RAG) systems
+- Large-scale data analytics dashboards
+- High-performance backend architectures
+- Full-stack engineering using Java and Next.js
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+This website highlights:
+
+- Real-world engineering impact
+- Architectural expertise
+- Key projects and technical leadership
+- Professional experience and achievements
+
+---
+
+## 🧠 Core Focus Areas
+
+- LLM Integration & RAG Pipelines
+- Engineering Intelligence Platforms
+- SQL Performance Optimization (10M+ datasets)
+- Distributed Data Integration Systems
+- Full-Stack Architecture (Spring Boot + Next.js)
+- Developer Productivity & Analytics
+
+---
+
+## 🏗️ Featured Projects
+
+### CleverDev (Quality Intelligence Platform)
+
+- Integrated 70+ engineering tools (GitHub, Jira, Jenkins, SonarQube, etc.)
+- Real-time engineering analytics dashboards
+- High-performance APIs using Spring Boot
+- Optimized database performance for large-scale datasets
+
+### OpsHub Data Bridge
+
+- AI-powered organizational knowledge platform
+- LLM-based RAG architecture using LangChain
+- Vector-based retrieval pipelines
+- FastAPI backend handling 100K+ queries/day
+
+### OM4ADO Automation
+
+- Automated Azure DevOps migration workflows
+- Reduced upgrade effort by 60%
+- Improved release reliability and turnaround time
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React / Next.js
+- Tailwind CSS
+- Framer Motion
+
+### Backend
+- Java (Spring Boot)
+- Python (FastAPI)
+
+### AI / Data
+- LLM Integration
+- Retrieval-Augmented Generation (RAG)
+- LangChain
+- Vector Search
+
+### Databases
+- MS SQL Server
+- PostgreSQL
+- MySQL
+
+### DevOps
+- Azure DevOps
+- Docker
+- Jenkins
+- GitHub Actions
+
+---
+
+## 🎯 Design Philosophy
+
+This portfolio follows a minimalist and professional design approach:
+
+- High signal-to-noise ratio
+- Architecture-first storytelling
+- Performance-focused implementation
+- Clean typography and spacing
+- Subtle interaction design
+
+---
+
+## 📦 Project Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
