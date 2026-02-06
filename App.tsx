@@ -22,9 +22,9 @@ function App() {
           <Hero />
           <Impact />
           <Architecture />
+          <Experience />
           <Projects />
           <Skills />
-          <Experience />
           <Education />
           <Certifications />
           <Achievements />
