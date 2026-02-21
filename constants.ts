@@ -21,13 +21,18 @@ export const NAV_LINKS = [
 ];
 
 export const IMPACT_HIGHLIGHTS = [
-    { value: "70+", label: "Tool Integrations", description: "Platform integrating 70+ engineering tools for quality intelligence." },
-    { value: "10M+", label: "Records Optimized", description: "Improved SQL query performance on datasets exceeding 10 million records." },
-    { value: "100K+", label: "Queries Per Day", description: "Built a scalable LLM-powered knowledge platform handling over 100K daily queries." },
-    { value: "50%", label: "Load Time Reduction", description: "Reduced dashboard data load times by 50% through back-end optimization." },
+    { value: "70+", label: "Tool Integrations", description: "Platform integrating 70+ engineering tools for quality intelligence.", color: "blue", icon: "cube" },
+    { value: "10M+", label: "Records Optimized", description: "Improved SQL query performance on datasets exceeding 10 million records.", color: "indigo", icon: "chart" },
+    { value: "50%", label: "Load Time Reduction", description: "Reduced dashboard data load times by 50% through back-end optimization.", trend: "up", color: "emerald", icon: "bolt" },
+    { value: "100K+", label: "Queries Per Day", description: "Built a scalable LLM-powered knowledge platform handling over 100K daily queries.",color: "violet", icon: "users" },
 ];
 
 export const PROJECTS = [
+    {
+        title: "Requirement Quality Intelligence Platform",
+        description: "An AI-powered intelligence platform that analyzes requirements and engineering workitems to detect risk patterns, failure themes, and historical correlations. Built using FastAPI and Next.js with a RAG-based LLM pipeline. T",
+        tags: ["Python", "FastAPI", "Next.js", "PGVector", "LLM", "RAG", "LangChain"],
+    },
     {
         title: "CleverDev (Quality Intelligence Platform)",
         description: "Led development of a platform integrating 70+ engineering tools (GitHub, Jira, etc.) into real-time analytics dashboards. Optimized SQL queries for 10M+ record datasets, cutting load times by 50%.",

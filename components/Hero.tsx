@@ -10,7 +10,7 @@ const ROLES = [
     'Data Platform Specialist',
 ];
 
-const useTypedText = (words: string[], speed = 80, pause = 1800) => {
+const useTypedText = (words: string[], speed = 90, pause = 1800) => {
     const [display, setDisplay] = useState('');
     const [wordIdx, setWordIdx] = useState(0);
     const [charIdx, setCharIdx] = useState(0);
@@ -141,7 +141,7 @@ const Hero: React.FC = () => {
             />
 
             {/* ── Content ── */}
-            <div ref={heroRef} className="relative z-10 max-w-4xl mx-auto px-6 py-20">
+            <div ref={heroRef} className="relative z-10 pt-15 max-w-4xl mx-auto px-6 py-20">
 
                 {/* Name */}
                 <h1
@@ -155,7 +155,7 @@ const Hero: React.FC = () => {
                 <div style={fadeUp(300)} className="h-10 flex items-center justify-center mb-6">
                     <p className="text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300 font-mono">
                         {typedRole}
-                        <span className="inline-block w-0.5 h-6 ml-1 bg-blue-500 align-middle animate-pulse" />
+                        <span className="inline-block w-1.5 h-6 ml-1 bg-blue-500 align-middle animate-pulse" />
                     </p>
                 </div>
 
@@ -252,9 +252,9 @@ const Hero: React.FC = () => {
                 {/* Credibility Stats */}
                 <div style={fadeUp(900)} className="flex flex-wrap justify-center gap-5 mb-11">
                     <StatPill value="6+" label="Years Experience" />
-                    <StatPill value="20+" label="Projects Shipped" />
+                    <StatPill value="25+" label="Features Shipped" />
                     <StatPill value="10x" label="Performance Gains" />
-                    <StatPill value="9+" label="Customer Deployments" />
+                    <StatPill value="9+" label="Deployments" />
                 </div>
 
                 {/* Scroll Cue */}
