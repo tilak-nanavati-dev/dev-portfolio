@@ -5,8 +5,10 @@ export const PROFILE_DATA = {
     positioningStatement: "I architect and build high-impact, scalable AI platforms and data systems, translating complex engineering innovation into tangible business value.",
     contact: {
         email: "tilak.nanavati@gmail.com",
-        linkedin: "https://www.linkedin.com/in/tilak-nanavati/",
-        github: "https://github.com/tilak-nanavati", // Placeholder, as not provided
+        linkedin: "https://www.linkedin.com/in/tilak-nanavati-49b716a8/",
+        github: "https://github.com/tilak-nanavati-dev",
+        twitter: "https://twitter.com/tilak_nanavati", // Placeholder, update with actual Twitter URL if available.
+        resumeUrl: "https://drive.google.com/file/d/id/view?usp=sharing", // Placeholder, update with actual resume URL if available.
     }
 };
 

@@ -16,18 +16,17 @@ import Contact from './components/Contact';
 function App() {
   return (
     <ThemeProvider>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col">
         <Header />
         <main className="flex-grow">
-          <Hero />
-          <Impact />
-          <Architecture />
-          <Experience />
-          <Projects />
-          <Skills />
-          <Education />
-          <Certifications />
-          <Achievements />
+            <Hero />
+            <Impact />
+            <Architecture />
+            <Projects />
+            <Experience />
+            <Skills />
+            <Achievements />
+            <Education />
         </main>
         <Contact />
       </div>
