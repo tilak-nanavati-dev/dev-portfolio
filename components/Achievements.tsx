@@ -300,23 +300,6 @@ const Achievements: React.FC = () => {
                         />
                     ))}
                 </div>
-
-                {/* ── Summary stat strip ── */}
-                <div
-                    className="mt-14 flex flex-wrap justify-center gap-8 text-center"
-                    style={{ opacity: inView ? 1 : 0, transition: 'opacity 0.6s ease 700ms' }}
-                >
-                    {[
-                        { value: allAchievements.length, label: 'Total Recognitions' },
-                        { value: categories.length, label: 'Domains' },
-                        { value: featured.length, label: 'Featured Awards' },
-                    ].map(({ value, label }) => (
-                        <div key={label} className="flex flex-col items-center">
-                            <span className="text-3xl font-extrabold text-gray-900 dark:text-white font-mono">{value}</span>
-                            <span className="text-xs text-gray-400 dark:text-gray-500 mt-1 tracking-wide uppercase">{label}</span>
-                        </div>
-                    ))}
-                </div>
             </div>
         </Section>
     );
