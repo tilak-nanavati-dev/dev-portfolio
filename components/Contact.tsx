@@ -111,7 +111,6 @@ const Contact: React.FC = () => {
     });
 
     const socialLinks = [
-        contact.email && { href: `mailto:${contact.email}`, label: contact.email, icon: <EmailIcon /> },
         contact.linkedin && { href: contact.linkedin, label: 'LinkedIn', icon: <LinkedInIcon /> },
         contact.github && { href: contact.github, label: 'GitHub', icon: <GitHubIcon /> },
         contact.twitter && { href: contact.twitter, label: 'Twitter / X', icon: <TwitterIcon /> },
@@ -187,7 +186,7 @@ const Contact: React.FC = () => {
                 px-3 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400
                 border border-emerald-200 dark:border-emerald-800">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                Available to hire
+                Available
               </span>
 
                             <a
@@ -206,27 +205,30 @@ const Contact: React.FC = () => {
 
                 {/* ── Social Links ── */}
                 <div style={fadeUp(300)} className="flex flex-wrap justify-center gap-3 mb-10">
-                    {socialLinks.map((link) => (
-                        <SocialLink key={link.href} {...link} />
-                    ))}
 
-                    {contact.resumeUrl && (
-                        <a
-                            href={contact.resumeUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-3 px-5 py-3.5 rounded-xl text-sm font-semibold
+                    <div className="w-full flex justify-center">
+                        {contact.resumeUrl && (
+                            <a
+                                href={contact.resumeUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-3 px-5 py-3.5 rounded-xl text-sm font-semibold
                 border border-dashed border-gray-300 dark:border-gray-600
-                text-gray-500 dark:text-gray-400
+                text-blue-500 dark:text-gray-400 transition-smooth duration-400
                 hover:border-blue-400 dark:hover:border-blue-600
                 hover:text-blue-600 dark:hover:text-blue-400
                 hover:-translate-y-0.5 hover:shadow-md
                 transition-all duration-200"
-                        >
-                            <DownloadIcon />
-                            Download Résumé
-                        </a>
-                    )}
+                            >
+                                <DownloadIcon />
+                                Download Résumé
+                            </a>
+                        )}
+                    </div>
+
+                    {socialLinks.map((link) => (
+                        <SocialLink key={link.href} {...link} />
+                    ))}
                 </div>
 
                 {/* ── Divider ── */}

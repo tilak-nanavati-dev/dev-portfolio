@@ -9,7 +9,8 @@ export const PROFILE_DATA = {
         github: "https://github.com/tilak-nanavati-dev",
         twitter: "https://twitter.com/tilak_nanavati", // Placeholder, update with actual Twitter URL if available.
         resumeUrl: "https://drive.google.com/file/d/id/view?usp=sharing", // Placeholder, update with actual resume URL if available.
-    }
+    },
+    location: "Ahmedabad, Gujarat, India",
 };
 
 export const NAV_LINKS = [
@@ -66,14 +67,19 @@ export const SKILLS = {
 export const EXPERIENCE = [
     {
         role: "Principal Software Engineer",
-        company: "CleverDev, Inc.",
+        company: "OpsHub Technologies Private Limited",
         period: "June 2020 – Present",
         description: [
             "Pioneered a Quality Intelligence Platform integrating data from 70+ engineering tools.",
             "Architected and built scalable Spring Boot APIs and optimized Next.js dashboards for 10M+ record datasets.",
             "Led design of an LLM-powered knowledge hub with RAG, handling 100K+ daily queries.",
             "Automated Azure DevOps migration, reducing upgrade effort by 60% and improving reliability by 40%."
-        ]
+        ],
+        companyUrl: "https://www.opshub.com/",
+        location: "Ahmedabad, Gujarat, India",
+        type: "Full-time",
+        current: true,
+        skills: ["Java", "Next.js", "Python", "FastAPI", "LLM", "RAG", "Azure DevOps", "Performance Optimization"]
     },
     {
         role: "Associate Software Engineer",
@@ -83,7 +89,11 @@ export const EXPERIENCE = [
             "Implemented Apex triggers and Lightning components, reducing manual data entry by 60%.",
             "Delivered integrated Salesforce modules, enhancing deployment reliability by 40% with Jenkins automation.",
             "Improved UI responsiveness and overall user experience for enterprise-scale applications."
-        ]
+        ],
+        companyUrl: "https://www.accenture.com/in-en",
+        location: "Pune, Maharashtra, India",
+        type: "Full-time",
+        skills: ["Salesforce","Lightning", "Classic", "Apex", "Triggers", "Automation"]
     },
 ];
 
