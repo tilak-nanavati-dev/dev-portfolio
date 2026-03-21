@@ -16,12 +16,11 @@ import Contact from './components/Contact';
 function App() {
   return (
     <ThemeProvider>
-      <div className="flex flex-col">
+      <div className="flex flex-col width-full">
         <Header />
         <main className="flex-grow">
             <Hero />
             <Impact />
-            <Architecture />
             <Projects />
             <Experience />
             <Skills />

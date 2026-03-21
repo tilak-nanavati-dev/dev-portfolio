@@ -35,11 +35,36 @@ const ICONS: Record<string, React.ReactNode> = {
             <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0" />
         </svg>
     ),
-    star: (
-        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
-        </svg>
-    ),
+        chess: (
+            <svg
+                className="w-6 h-8"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.6}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            >
+                {/* Crown points — 5 orbs across the top */}
+                <circle cx="12" cy="3"   r="1.2" fill="currentColor" stroke="none" />
+                <circle cx="5"  cy="6"   r="1.2" fill="currentColor" stroke="none" />
+                <circle cx="19" cy="6"   r="1.2" fill="currentColor" stroke="none" />
+                <circle cx="8"  cy="4.5" r="1"   fill="currentColor" stroke="none" />
+                <circle cx="16" cy="4.5" r="1"   fill="currentColor" stroke="none" />
+
+                {/* Crown body — sweeps from left point down to base */}
+                <path d="M5 6 L7 15 H17 L19 6 L16 9 L12 4 L8 9 Z" />
+
+                {/* Neck */}
+                <rect x="7.5" y="15" width="9" height="1.5" rx="0.5" />
+
+                {/* Base platform */}
+                <rect x="5.5" y="18" width="13" height="2.5" rx="1" />
+
+                {/* Connector between neck and base */}
+                <rect x="7" y="16.5" width="10" height="1.5" rx="0.5" />
+            </svg>
+        ),
     code: (
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
@@ -250,28 +275,6 @@ const Achievements: React.FC = () => {
             </span>
                     </p>
                 </div>
-
-                {/* ── Filter Tabs ── */}
-                {filterTabs.length > 1 && (
-                    <div
-                        className="flex flex-wrap justify-center gap-2 mb-12"
-                        style={{ opacity: inView ? 1 : 0, transition: 'opacity 0.6s ease 200ms' }}
-                    >
-                        {filterTabs.map((tab) => (
-                            <button
-                                key={tab}
-                                onClick={() => setActiveFilter(tab)}
-                                className={`px-5 py-2 rounded-full text-xs font-semibold tracking-wide transition-all duration-200
-                  ${activeFilter === tab
-                                    ? 'bg-blue-600 text-white shadow-md shadow-blue-500/20 scale-105'
-                                    : 'bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-700 hover:text-blue-600 dark:hover:text-blue-400'
-                                }`}
-                            >
-                                {tab}
-                            </button>
-                        ))}
-                    </div>
-                )}
 
                 {/* ── Featured ── */}
                 {featured.length > 0 && activeFilter === 'All' && (

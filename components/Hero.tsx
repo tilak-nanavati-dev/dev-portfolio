@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Section from './Section';
 import { PROFILE_DATA } from '../constants';
+import { ChevronRight } from "lucide-react";
 
 // ─── Typed Roles Animation ────────────────────────────────────────────────────
 const ROLES = [
@@ -175,14 +176,16 @@ const Hero: React.FC = () => {
                 {/* CTA Buttons */}
                 <div
                     style={fadeUp(600)}
-                    className="flex flex-col sm:flex-row justify-center items-center gap-3 mb-14"
+                    className="flex flex-col sm:flex-row justify-center items-center gap-3 mb-10"
                 >
                     <a
                         href="#projects"
                         className="group px-8 py-3.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold rounded-xl shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2"
                     >
                         Explore My Work
-                        <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
+                        <span className="ml-2 inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/50 dark:bg-white/10 backdrop-blur-sm transition-all duration-200 group-hover:translate-x-1 group-hover:bg-white/30">
+                            <ChevronRight className="w-5 h-5 text-current" />
+                        </span>
                     </a>
 
                     <a
@@ -206,7 +209,7 @@ const Hero: React.FC = () => {
                     </a>
                 </div>
                 {/* Social Links */}
-                <div style={fadeUp(750)} className="flex justify-center gap-3 mb-14">
+                <div style={fadeUp(750)} className="flex justify-center gap-3 mb-10">
                     {/* GitHub */}
                     <SocialLink
                         href={PROFILE_DATA.contact.github ?? '#'}
