@@ -136,8 +136,6 @@ export const SKILLS = {
     "DevOps & Tools": ["Azure DevOps", "Docker", "Jenkins", "GitHub", "Git"],
 };
 
-// ─── constants/experience.ts ───────────────────────────────────────────────────
-// Drop this into your constants file, replacing the existing EXPERIENCE export.
 
 export const EXPERIENCE = [
     {

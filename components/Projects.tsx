@@ -169,14 +169,14 @@ const FeaturedCard: React.FC<{ project: Project; inView: boolean; delay: number 
                             <div className="space-y-2.5">
                                 {project.impact.map((item, i) => (
                                     <div key={i} className="flex items-start gap-2.5 p-3 rounded-xl
-                    bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/60">
+                    bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/60 hover:bg-gray-100/10 hover:border-blue-500 hover:shadow-md dark:hover:bg-gray-700/80 transition-colors">
                     <span className="mt-0.5 w-4 h-4 shrink-0 rounded-full bg-blue-100 dark:bg-blue-900/50
                       flex items-center justify-center text-blue-600 dark:text-blue-400">
                       <svg className="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </span>
-                                        <span className="text-xs text-gray-600 dark:text-gray-300 leading-snug font-medium">
+                                        <span className="text-xs text-gray-600 dark:text-gray-300 leading-snug font-medium hover:text-blue-600 dark:hover:text-white transition-colors">
                       {item}
                     </span>
                                     </div>
@@ -345,31 +345,6 @@ const Projects: React.FC = () => {
                         challenges at scale.
                     </p>
                 </div>
-
-                {/* ── Filter Tabs ── */}
-                {allCategories.length > 1 && (
-                    <div
-                        className="flex flex-wrap justify-center gap-2 mb-12"
-                        style={{
-                            opacity: inView ? 1 : 0,
-                            transition: 'opacity 0.6s ease 200ms',
-                        }}
-                    >
-                        {allCategories.map((cat) => (
-                            <button
-                                key={cat}
-                                onClick={() => setActiveFilter(cat)}
-                                className={`px-5 py-2 rounded-full text-xs font-semibold tracking-wide transition-all duration-200
-                  ${activeFilter === cat
-                                    ? 'bg-blue-600 text-white shadow-md shadow-blue-500/20 scale-105'
-                                    : 'bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-700 hover:text-blue-600 dark:hover:text-blue-400'
-                                }`}
-                            >
-                                {cat}
-                            </button>
-                        ))}
-                    </div>
-                )}
 
                 {/* ── Featured Projects ── */}
                 {featured.length > 0 && (
