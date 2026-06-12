@@ -129,7 +129,7 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = {
-    "Languages": ["Java", "JavaScript", "Python"],
+    "Languages": ["Python", "Java", "JavaScript"],
     "Frameworks & Libraries": ["Spring Boot", "Next.js", "REST", "Hibernate", "LangChain"],
     "AI/ML": ["LLMs", "Retrieval-Augmented Generation (RAG)", "Vector Search", "AI-driven Analytics"],
     "Databases": ["MS SQL Server", "PostgreSQL", "MySQL", "Performance Tuning"],
