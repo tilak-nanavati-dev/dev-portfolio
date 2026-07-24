@@ -20,7 +20,10 @@ const Header: React.FC = () => {
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <a href="#" className="text-xl font-bold tracking-tight text-light-text dark:text-dark-text">{PROFILE_DATA.name}</a>
+            <a href="#" className="flex items-center gap-2 text-xl font-bold tracking-tight text-light-text dark:text-dark-text">
+              <img src={`${import.meta.env.BASE_URL}logo_transparent.png`} alt="Logo" className="h-12 w-12 object-contain transition-transform duration-500 hover:rotate-[360deg] hover:scale-110" />
+              {PROFILE_DATA.name}
+            </a>
           </div>
           <div className="hidden md:flex md:items-center md:space-x-8">
             {NAV_LINKS.map(link => (
