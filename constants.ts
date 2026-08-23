@@ -32,6 +32,26 @@ export const IMPACT_HIGHLIGHTS = [
 
 export const PROJECTS = [
     {
+        title: "AIG Data Sync PCS — Agentic Framework for Automated Data Pipeline Configuration",
+        description:
+            "Architected a generic, reusable agentic AI framework on AWS Bedrock/AgentCore to automate migration of legacy data-pipeline configs (IICS XML, DQ Validations, Transformations) into standardized Atlantic YAML, eliminating manual reverse-engineering effort for a large-scale GDW modernization initiative.",
+        longDescription:
+            "Engineered a GenAI-driven multi-agent pipeline — parsing, generation, and validation agents — powered by Claude Sonnet, reducing config-migration effort by cutting manual translation steps across complex ETL transformation mappings. Built a RAG-based knowledge retrieval system (AWS Titan embeddings + vector store) grounding all LLM-generated configs in existing enterprise mapping conventions, significantly improving output accuracy and consistency over zero-shot generation. Delivered end-to-end architecture design, AWS infrastructure blueprint, and a working PoC validating automated config generation from legacy templates — demonstrating production viability to enterprise stakeholders.",
+        impact: [
+            "Eliminated manual reverse-engineering of legacy pipeline configs",
+            "Multi-agent pipeline cutting manual ETL translation steps",
+            "RAG grounding improved output accuracy over zero-shot generation",
+            "PoC validated production viability for enterprise GDW modernization",
+        ],
+        tags: ["AWS Bedrock", "AWS AgentCore", "Claude Sonnet", "Multi-Agent Systems", "RAG", "AWS Titan Embeddings", "Vector Store", "IICS", "ETL", "Python"],
+        category: "AI/ML",
+        status: "Production",
+        featured: true,
+        year: "2026",
+        github: "",
+        demo: "",
+    },
+    {
         title: "Requirement Quality Intelligence Platform",
         description:
             "An AI-powered intelligence platform that analyzes requirements and engineering work items to detect risk patterns, failure themes, and historical correlations. Built using FastAPI and Next.js with a RAG-based LLM pipeline.",
@@ -45,7 +65,7 @@ export const PROJECTS = [
         tags: ["Python", "FastAPI", "Next.js", "PGVector", "RAG", "Reciprocal Rank Fusion"],
         category: "AI/ML",
         status: "Production",
-        featured: true,
+        featured: false,
         year: "2025",
         github: "",
         demo: "",
@@ -65,7 +85,7 @@ export const PROJECTS = [
         category: "Data Systems",
         status: "Production",
         featured: true,
-        year: "2021",
+        year: "2025",
         github: "",
         demo: "",
     },
@@ -83,8 +103,8 @@ export const PROJECTS = [
         tags: ["Python", "FastAPI", "LLM", "RAG", "LangChain", "Vector Search"],
         category: "AI/ML",
         status: "Production",
-        featured: false,
-        year: "2020",
+        featured: true,
+        year: "2022-2024",
         github: "",
         demo: "",
     },
@@ -139,13 +159,36 @@ export const SKILLS = {
 
 export const EXPERIENCE = [
     {
+        role: "Senior Associate – Gen AI Tech Lead",
+        company: "Cognizant Technology Solutions Corporation",
+        period: "May 2025 – Present",
+        location: "GIFT City, Gandhinagar, Gujarat",
+        type: "Full-time",
+        current: true,
+        highlights: [
+            "Agentic AI on AWS Bedrock",
+            "Multi-Agent GenAI Pipeline",
+            "RAG & Vector Retrieval",
+        ],
+        description: [
+            "Agentic AI Framework: Architected a generic, reusable agentic AI framework on AWS Bedrock/AgentCore to automate migration of legacy data-pipeline configs (IICS XML, DQ Validations, Transformations) into standardized Atlantic YAML, eliminating manual reverse-engineering effort for a large-scale GDW modernization initiative.",
+            "Multi-Agent Pipeline: Engineered a GenAI-driven multi-agent pipeline — parsing, generation, and validation agents — powered by Claude Sonnet, reducing config-migration effort by cutting manual translation steps across complex ETL transformation mappings.",
+            "RAG & Vector Retrieval: Built a RAG-based knowledge retrieval system (AWS Titan embeddings + vector store) grounding all LLM-generated configs in existing enterprise mapping conventions, significantly improving output accuracy and consistency over zero-shot generation.",
+            "Architecture & PoC Delivery: Delivered end-to-end architecture design, AWS infrastructure blueprint, and a working PoC validating automated config generation from legacy templates — demonstrating production viability to enterprise stakeholders.",
+        ],
+        skills: [
+            "AWS Bedrock", "AWS AgentCore", "Claude Sonnet", "Multi-Agent Systems",
+            "RAG", "AWS Titan Embeddings", "Vector Store", "IICS", "ETL", "Python",
+        ],
+    },
+    {
         role: "Principal Software Engineer",
         company: "OpsHub Technologies Private Limited",
         companyUrl: "https://www.opshub.com/",
-        period: "June 2020 – Present",
+        period: "June 2020 – April 2026",
         location: "Ahmedabad, Gujarat, India",
         type: "Full-time",
-        current: true,
+        current: false,
         highlights: [
             "Integrated 70+ engineering tools",
             "100K+ daily LLM queries",
