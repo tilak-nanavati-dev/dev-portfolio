@@ -8,7 +8,7 @@ export const PROFILE_DATA = {
         linkedin: "https://www.linkedin.com/in/tilak-nanavati-49b716a8/",
         github: "https://github.com/tilak-nanavati-dev",
         twitter: "https://twitter.com/tilak_nanavati", // Placeholder, update with actual Twitter URL if available.
-        resumeUrl: "https://drive.google.com/file/d/id/view?usp=sharing", // Placeholder, update with actual resume URL if available.
+        resumeUrl: `${import.meta.env.BASE_URL}Tilak_Digantkumar_Nanavati_Resume_Gen_AI_Lead.pdf`, // Available Resume in Public folder.
     },
     location: "Ahmedabad, Gujarat, India",
 };
