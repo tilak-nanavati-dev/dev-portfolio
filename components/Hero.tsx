@@ -165,12 +165,12 @@ const Hero: React.FC = () => {
                     style={fadeUp(450)}
                     className="max-w-2xl mx-auto text-base md:text-lg text-gray-500 dark:text-gray-400 leading-relaxed mb-10"
                 >
-                    Designing scalable data systems, intelligent retrieval architectures,
-                    and performance-optimized platforms that transform engineering metrics
-                    into{' '}
+                    Architecting agentic AI systems, multi-agent pipelines, and
+                    intelligent data platforms that turn complex engineering challenges
+                    into{' '}<br></br>
                     <span className="text-blue-600 dark:text-blue-400 font-medium">
-            actionable product intelligence.
-          </span>
+                        production-ready AI solutions.
+                    </span>
                 </p>
 
                 {/* CTA Buttons */}

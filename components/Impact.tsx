@@ -135,9 +135,16 @@ const ImpactCard: React.FC<{
     const iconKey = highlight.icon ?? 'default';
     const icon = IconMap[iconKey] ?? IconMap.default;
 
+    const [started, setStarted] = useState(false);
+    useEffect(() => {
+        if (!inView) return;
+        const timer = setTimeout(() => setStarted(true), index * 1100);
+        return () => clearTimeout(timer);
+    }, [inView, index]);
+
     const numericValue = parseFloat(String(highlight.value).replace(/[^0-9.]/g, ''));
     const suffix = highlight.suffix ?? String(highlight.value).replace(/[0-9.]/g, '');
-    const animated = useCountUp(numericValue, 1600, inView);
+    const animated = useCountUp(numericValue, 1600, started);
 
     const displayValue = isNaN(numericValue) ? String(highlight.value) : `${animated}${suffix}`;
 
@@ -149,7 +156,7 @@ const ImpactCard: React.FC<{
             style={{
                 opacity: inView ? 1 : 0,
                 transform: inView ? 'translateY(0)' : 'translateY(32px)',
-                transition: `opacity 0.6s ease ${index * 120}ms, transform 0.6s ease ${index * 120}ms, box-shadow 0.3s ease, border-color 0.3s ease`,
+                transition: `opacity 0.6s ease ${index * 1100}ms, transform 0.6s ease ${index * 1100}ms, box-shadow 0.3s ease, border-color 0.3s ease`,
             }}
         >
             {/* Top row: icon badge + trend indicator */}
@@ -183,6 +190,7 @@ const ImpactCard: React.FC<{
             {/* Animated Value */}
             <p
                 className={`text-5xl font-extrabold tracking-tight mb-2 bg-gradient-to-br bg-clip-text text-transparent ${colors.value}`}
+                style={{transitionDelay: `${index * 1100 + 100}ms`}}
             >
                 {displayValue}
             </p>
@@ -201,7 +209,7 @@ const ImpactCard: React.FC<{
             <div className="mt-6 h-1 rounded-full bg-gray-100 dark:bg-gray-800 overflow-hidden">
                 <div
                     className={`h-full rounded-full ${colors.bar} transition-all duration-[1500ms] ease-out`}
-                    style={{ width: inView ? '100%' : '0%', transitionDelay: `${index * 120 + 400}ms` }}
+                    style={{ width: inView ? '100%' : '0%', transitionDelay: `${index * 1100 + 400}ms` }}
                 />
             </div>
         </div>

@@ -25,7 +25,7 @@ export const NAV_LINKS = [
 
 export const IMPACT_HIGHLIGHTS = [
     { value: "70+", label: "Tool Integrations", description: "Platform integrating 70+ engineering tools for quality intelligence.", color: "blue", icon: "cube" },
-    { value: "10M+", label: "Records Optimized", description: "Improved SQL query performance on datasets exceeding 10 million records.", color: "indigo", icon: "chart" },
+    { value: "10M+", label: "Records Optimized", description: "Improved SQL query performance on datasets exceeding 10 million records.", trend: "up", color: "indigo", icon: "chart" },
     { value: "50%", label: "Load Time Reduction", description: "Reduced dashboard data load times by 50% through back-end optimization.", trend: "up", color: "emerald", icon: "bolt" },
     { value: "100K+", label: "Queries Per Day", description: "Built a scalable LLM-powered knowledge platform handling over 100K daily queries.",color: "violet", icon: "users" },
 ];
